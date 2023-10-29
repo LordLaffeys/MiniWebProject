@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WearHouse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+
+        <div class="nav-item1">
+            <a href="dashboard.html" style="font-weight: bold;">WearHouse</a>
+            <a href="category.html" class="item">Category</a>
+            <a href="AboutUs.html" class="item">About Us</a>
+        </div>
+        
+        <div id="nav-logreg" class="nav-item2">
+            <a href="login.html" class="item">Login</a>
+            <a href="register.html" class="item">Register</a>
+        </div>
+
+        <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+        </div>
+
+        <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Admin &#x25BC;</button>
+        </div>
+
+    </div>
+
+    <span>
+        <div id="myDropdown" class="dropdown-content">
+            <p>Logout</p>
+        </div>
+    </span>
+
+    <div class="navbar-phone">
+        <a href="category.html" class="item" id>Category</a>
+        <a href="AboutUs.html" class="item">About Us</a>
+        <a href="login.html" class="logreg-phone">Login</a>
+        <a href="register.html" class="logreg-phone">Register</a>
+        <a id="phone-logout" href="">Logout</a>
+    </div>
+
+
+    <div id="id1" class="modal">
+
+        <form id="register-form" class="form-container animate">
+            
+            <h1>Register</h1>
+            
+            <table>
+                <tr class="table-login-register">
+                    <td><label for="uname"><b>Username</b></label></td>
+                    <td><input type="text" name="rname" placeholder="Enter Username" required></td>
+                </tr>
+
+                <tr class="table-login-register">
+                    <td><label for="email"><b>Email Address</b></label></td>
+                    <td><input type="text" name="rname" id="remail" pattern="^[^\s@]+@[^\s@]+\.com$" placeholder="Enter Email" required></td>
+                </tr>
+
+                <tr class="table-login-register">
+                    <td><label for="psw"><b>Password</b></label></td>
+                    <td><input type="password" name="rpsw" id="rpsw" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&+=])(?=.*[!]).{8,}$" placeholder="Enter Password" required></td>
+                </tr>
+
+                <tr class="table-login-register">
+                    <td><label for="psw-repeat"><b>Repeat Password</b></label></td>
+                    <td><input type="password" name="psw-repeat" placeholder="Enter Password" required></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><label><input type="checkbox" name="terms"  required> By clicking register, I agree to the terms and conditions</label></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Register</button></td>
+                </tr>
+                
+            </table>
+
+        </form>
+
+    </div>
+
+    <div id="id2" class="modal">
+
+        <form  id="login-form" class="form-container animate">
+            
+            <h1>Login</h1>
+
+            <table>
+                <tr class="table-login-register">
+                    <td><label for="email"><b>Email Address</b></label></td>
+                    <td><input type="text" name="email" id="lemail" pattern="^[^\s@]+@[^\s@]+\.com$" placeholder="Enter Email" required></td>
+                </tr>
+
+                <tr class="table-login-register">
+                    <td id="login-detail"><label for="psw"><b>Password</b></label></td>
+                    <td><input type="password" name="psw" id="lpsw" placeholder="Enter Password" required></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="terms" required> Remember Me
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Login</button> <a id="forgot-psw" href="#">Forgot Password</a> </td>
+                </tr>
+            </table>
+                 
+        </form>
+
+    </div>
+
+
+    <div id="about">
+        <div>
+            <h1>About Us</h1>
+        </div>
+        
+        <div class="about-content">
+            <p>WearHouse is fast fashion that was founded in 2019. WearHouse aims to provide affordable. High quality, trendy, and easy-to-acess fashion apparels. To fulfils our goals, we have opened more than 100 stores in various cities across Indonesia. We have a commitment to make each of our products available in every store, with equal price tags and build qualities regardless of location.</p>
+
+            <p><b>Contact Us</b></p>
+            <p>Phone: &lpar;021&rpar; 12345</p>
+            <p>Email: support@wearhouse.com</p>
+        </div>
+    </div>
+
+    
+    <div class="footer">
+        <div>
+            <img style="width: 2rem;" src="images/twitter-logo.png" alt="">
+            <img src="images/facebook-logo.png" alt="">
+            <img style="width: 2rem;" src="images/instagram-logo.png" alt="">
+        </div>
+
+        <p>Copyright © 2021 JovianYanto. All Rights Reseverd</p>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

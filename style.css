@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    overflow: auto;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: whitesmoke;
+    overflow: hidden;
+    font-size: 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.navbar a{
+    color: rgb(87, 82, 82);
+    text-decoration: none;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.navbar .home{
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+
+.navbar .nav-item2 {
+    margin-left: auto;
+    text-align: right;
+}
+
+.navbar .nav-item2{
+    display: block;
+}
+
+.navbar .hamburger-menu {
+    border: 1px solid grey;
+    border-radius: 10%;
+    width: 3rem;
+    height: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .line{
+    border: 2px solid grey;
+    padding: 0;
+    width: 2rem;
+    height: 1px;
+    background-color: grey;
+}
+
+
+.navbar-phone {
+    display: none;
+    width: 100%;
+    text-align: left;
+    background-color: #bdbdbd;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-phone a,p{
+    display: block;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.navbar-phone td {
+    vertical-align: middle;
+}
+
+/* drop down login */
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+    z-index: 6;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #bdbdbd;
+    border-radius: 5%;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 6;
+    right: 0;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.dropdown-content p {
+    color: black;
+    /* padding: 12px 16px; */
+    margin-left: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.show {display: block;}
+
+/* modal/box for log/reg/add/del*/
+
+
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 100px;
+}
+
+
+.form-container {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 10px;
+    top: 8vh;
+}
+
+/* for login & register */
+
+.form-container h1 {
+    background-color: #e5e9e7;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+}
+
+td #login-detail{
+    float: right;
+    background-color: black;
+}
+
+.form-container table, tr, td {
+    height: 2rem;
+}
+
+.form-container p{
+    margin-left: 5%;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 10px 10px;
+    margin-right: 40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.table-login-register label {
+    float: right;
+    margin-right: 5px;
+    text-align: right;
+}
+
+button {
+    float: left;
+    background-color: #1c5ce7;
+    color: white;
+    padding:  10px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 6rem;
+}
+
+#forgot-psw {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+/* for about us page */
+
+#about {
+    position: absolute;
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15vh;
+}
+
+.about-content {
+    background-color: #f9f9f9;
+    border: 2px solid #e3e3e9;
+    border-radius: 5px;
+    padding: 20px;
+    width: 45%;
+}
+
+.about-content b {
+    font-size: 1.5rem;
+}
+
+/* dashboard login */
+
+
+/* for footer */
+
+.footer {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    bottom: 0; 
+    left: 0; 
+    z-index: 4;
+    background-color: rgb(59, 57, 52);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.footer img {
+    height: 2rem;
+    width: 1.5rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+.footer p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* for add edit delete categories */
+
+.table-del p {
+    margin-left: 1rem;
+    padding-right: 10px;
+}
+
+.table-del button{
+    background-color: red;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.table-add-edit input{
+    width: 90%;
+    align-self: center;
+    margin-left: 5%;
+}
+
+.table-add-edit button{
+    float: right;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    background-color: green;
+}
+
+.table-add-edit label {
+    margin-left: 5%;
+}
+
+
+/* for categories tables */
+
+.category-table{
+    width: 90%;
+    margin: 0 5%;
+    padding-bottom: 15vh;
+}
+
+.category-table button{
+    width: 10rem;
+}
+
+.category-table table {
+    margin-top: 5rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.category-table td, tr, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.category-table tr:nth-child(even) {
+    background-color: #ececec;
+}
+
+.category-table .edit-button {
+    width: 3.5rem;
+    background-color: orange;
+    margin: 0.2rem;
+    font-size: small;
+    text-align: center;
+}
+
+.category-table .delete-button {
+    width: 3.5rem;
+    background-color: red;
+    margin: 0.2rem;
+    font-size: small;
+    text-align: center;
+}
+
+
+/* Phone 600px width styling */
+
+@media (max-width: 600px) {
+
+    .navbar .item {
+        display: none;
+    }
+
+    .form-container{
+        width: 85%;
+    }
+
+    .form-container label {
+        font-size: 15px;
+    }
+
+    .navbar .hamburger-menu{
+        display: flex;
+    }
+
+    .hamburger-menu {
+        order: 3;
+    }
+
+    .dropdown {
+        order: 2;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+}
+
+
